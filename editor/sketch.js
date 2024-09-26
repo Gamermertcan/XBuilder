@@ -273,6 +273,14 @@ const toolbox = {
       colour: "#2F00FF",
       custom: "VARIABLE",
     },
+    {
+      kind: "category",
+      name: "Category",
+      colour: "#0026ff",
+      contents: [
+        block("ytt"),
+      ]
+    },
   ],
 };
 
@@ -322,6 +330,10 @@ addCategory("texts", "#00ff00", "string", [
 addCategory("math", "#0000ff", "math", []);
 
 addCategory("lists", "#ff0000", "arrays", [
+  "lists_create_with_container",
+  "lists_create_with_item",
+]);
+addCategory("YouTube", "#ff0000", "arrays", [
   "lists_create_with_container",
   "lists_create_with_item",
 ]);
