@@ -1,4 +1,4 @@
-const version = "3.4";
+const version = " Demo";
 
 const whats_new = `
 added wait and wait until
@@ -547,10 +547,10 @@ $("#fileInput").on("change", (event) => {
   const selectedFile = fileInput.files[0];
 
   if (selectedFile) {
-    if (checkFileExtension(selectedFile, ".pb")) {
+    if (checkFileExtension(selectedFile, ".xbu")) {
       loadProject(selectedFile);
     } else {
-      alert("Please select a .pb file");
+      alert("Please select a .xbu file");
       fileInput.value = "";
     }
   }
