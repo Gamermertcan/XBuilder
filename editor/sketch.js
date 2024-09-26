@@ -428,8 +428,9 @@ $("#Export").click(() => {
     workspace.getAllVariables().forEach(v => v.name = Extension_id + "_" + v.name);
     download(
       `
-// Made with PenguinBuilder ${version}
-// use PenguinBuilder at "https://chickencuber.github.io/PenguinBuilder/"
+// Made with XBuilder ${version}
+// use XBuilder at "https://gamermertcan.github.io/XBuilder/"
+// or "https://xbuilder.rf.gd"
 (function(Scratch) {
   const blocks = [];
   const vars = {};
@@ -495,7 +496,7 @@ function saveProject(saveName) {
   const blocks = encode(JSON.stringify(Blockly.serialization.workspaces.save(workspace)));
   download(
     JSON.stringify({ color1, name, Extension_id, blocks, forceUnsandboxed, extensions, newdata: true }),
-    saveName + ".pb"
+    saveName + ".xbu"
   );
 }
 
