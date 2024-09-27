@@ -275,8 +275,8 @@ const toolbox = {
     },
     {
       kind: "category",
-      name: "Category",
-      colour: "#0026ff",
+      name: "YouTube",
+      colour: "#FF0000",
       contents: [
         block("ytt"),
       ]
