@@ -12,6 +12,6 @@ javascript.javascriptGenerator.forBlock["ytt"] = function (
   block,
   generator
 ) {
-  const code = '';
+  const code = 'return "wsp";';
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
